@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.marno.mbasiclib.widgets.MultipleStatusView
+    android:id="@+id/msvLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.main.MainActivity">
+
+    <com.marno.mbasiclib.widgets.mrecyclerview.MRecyclerView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.marno.mbasiclib.widgets.MultipleStatusView>

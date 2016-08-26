@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:id="@+id/llayout_bg_toast"
+        android:background="@color/toast_common"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/iv_icon_toast"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="@dimen/dp8"
+            tools:src="@drawable/remind"/>
+
+        <TextView
+            android:id="@+id/tv_content_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:maxWidth="200dp"
+            android:textColor="@android:color/white"
+            tools:text="登陆成功"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

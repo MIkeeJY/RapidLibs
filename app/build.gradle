@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.utouu.uhoo"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        manifestPlaceholders = [app_label: "@string/app_name"]
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+
+//    signingConfigs {
+//        release {
+//            storeFile file(RELEASE_STORE_FILE)
+//            storePassword RELEASE_STORE_PASSWORD
+//            keyAlias RELEASE_KEY_ALIAS
+//            keyPassword RELEASE_KEY_PASSWORD
+//        }
+//    }
+
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [app_label: "@string/app_name_debug"]
+            buildConfigField "String", "BASE_URL", "\"http://120.25.102.194/index.php/\""
+//            signingConfig signingConfigs.release//测试版使用release版签名
+        }
+
+
+        release {
+            minifyEnabled false
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"http://120.25.102.194/index.php/\""
+            applicationVariants.all { variant ->
+                if (variant.buildType.name.equals('release')) {
+                    variant.outputs.each { output ->
+                        def outputFile = output.outputFile
+                        if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                            def fileName = "Uhoo-v${defaultConfig.versionName}-${releaseTime()}-${variant.flavorName}.apk"
+                            output.outputFile = new File(outputFile.parent, fileName)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':mbasiclib')
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.android.support:support-v4:23.4.0'
+}
+
+def releaseTime() {
+    return new Date().format("yyMMddHHmm", TimeZone.getTimeZone("UTC"))
+}
