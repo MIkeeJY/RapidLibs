@@ -1,8 +1,10 @@
-package com.marno.mbasiclib.base;
+package com.marno.mbasiclib.base.activity;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.annotation.ColorInt;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -24,7 +26,7 @@ import rx.subjects.PublishSubject;
  * Created by 李刚 on 2016/7/18/10:24.
  * 所有Activity的基类
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class MBasicActivity extends AppCompatActivity {
 
     protected String TAG = getClass().getSimpleName();
 
@@ -37,11 +39,13 @@ public abstract class BaseActivity extends AppCompatActivity {
     /**
      * 获取布局
      */
+    @LayoutRes
     protected abstract int getLayout();
 
     /**
      * 获取沉浸状态栏颜色，如果是透明状态栏，返回0即可
      */
+    @ColorInt
     protected abstract int getStatusBarColor();
 
     /*
@@ -135,9 +139,10 @@ public abstract class BaseActivity extends AppCompatActivity {
 
 
     protected int isFirstBack;
+
     protected void quit() {
         if (isFirstBack == 0) {
-            ToastUtil.warn("再按一次退出App");
+            ToastUtil.warn("再按一次退出程序");
             isFirstBack = 1;
             new Timer().schedule(new TimerTask() {
                 @Override

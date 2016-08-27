@@ -1,4 +1,4 @@
-package com.marno.mbasiclib.base;
+package com.marno.mbasiclib.base.activity;
 
 import android.os.Bundle;
 
@@ -9,7 +9,7 @@ import com.marno.mbasiclib.widgets.mrecyclerview.MRecyclerView;
  * Created by 李刚 on 2016/8/25/21:48.
  * 同时支持滑动返回和列表刷新
  */
-public abstract class BaseSwipeAndRefreshActivity extends BaseActivity implements MRecyclerView.LoadingListener {
+public abstract class MBasicSwipeAndRefreshActivity extends MBasicActivity implements MRecyclerView.LoadingListener {
     protected boolean mIsRefresh;
 
     @Override

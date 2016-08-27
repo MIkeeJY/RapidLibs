@@ -59,13 +59,13 @@ public class MultipleStatusView extends RelativeLayout {
                 context.obtainStyledAttributes(attrs, R.styleable.MultipleStatusView, defStyleAttr, 0);
 
         emptyViewResId =
-                a.getResourceId(R.styleable.MultipleStatusView_emptyView, R.layout.layout_empty);
+                a.getResourceId(R.styleable.MultipleStatusView_emptyView, R.layout.rapid_layout_empty);
         errorViewResId =
-                a.getResourceId(R.styleable.MultipleStatusView_errorView, R.layout.layout_error);
+                a.getResourceId(R.styleable.MultipleStatusView_errorView, R.layout.rapid_layout_error);
         loadingViewResId =
-                a.getResourceId(R.styleable.MultipleStatusView_loadingView, R.layout.layout_loading);
+                a.getResourceId(R.styleable.MultipleStatusView_loadingView, R.layout.rapid_layout_loading);
         noNetworkViewResId = a.getResourceId(R.styleable.MultipleStatusView_noNetworkView,
-                R.layout.layout_no_network);
+                R.layout.rapid_layout_no_network);
         contentViewResId = a.getResourceId(R.styleable.MultipleStatusView_contentView,
                 NULL_RESOURCE_ID);
         a.recycle();

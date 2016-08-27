@@ -1,4 +1,4 @@
-package com.marno.mbasiclib.base;
+package com.marno.mbasiclib.base.activity;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import com.jude.swipbackhelper.SwipeBackHelper;
  * Created by 李刚 on 2016/8/25/21:48.
  * 支持滑动返回不支持列表刷新
  */
-public abstract class BaseSwipeActivity extends BaseActivity {
+public abstract class MBasicSwipeActivity extends MBasicActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

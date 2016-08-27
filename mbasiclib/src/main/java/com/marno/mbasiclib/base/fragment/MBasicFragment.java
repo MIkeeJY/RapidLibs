@@ -1,4 +1,4 @@
-package com.marno.mbasiclib.base;
+package com.marno.mbasiclib.base.fragment;
 
 
 import android.app.Activity;
@@ -21,8 +21,9 @@ import rx.subjects.PublishSubject;
 
 /**
  * Created by 李刚 on 2016/3/14/13:53.
+ * 所有Fragment的基类
  */
-public abstract class BaseFragment extends Fragment {
+public abstract class MBasicFragment extends Fragment {
 
     protected String TAG = getClass().getSimpleName();
 
@@ -39,9 +40,6 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 初始化布局
-     *
-     * @param view
-     * @param savedInstanceState
      */
     protected abstract void initView(View view, Bundle savedInstanceState);
 
@@ -128,8 +126,6 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 当Fragment可见时才加载数据
-     *
-     * @param hidden
      */
     @Override
     public void onHiddenChanged(boolean hidden) {

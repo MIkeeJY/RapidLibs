@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.marno.mbasiclib.adapter.RecyclerAdapter;
 import com.marno.mbasiclib.adapter.RecyclerAdapterHelper;
-import com.marno.mbasiclib.base.BaseRefreshFragment;
+import com.marno.mbasiclib.base.fragment.MBasicRefreshFragment;
 import com.marno.mbasiclib.manager.BannerManager;
 import com.marno.mbasiclib.manager.GlideManager;
 import com.marno.mbasiclib.utils.ToastUtil;
@@ -36,7 +36,7 @@ import rx.schedulers.Schedulers;
 /**
  * Created by marno on 2016/8/23/15:20.
  */
-public class FirstFragment extends BaseRefreshFragment {
+public class FirstFragment extends MBasicRefreshFragment {
 
     @BindView(R.id.content_view)
     MRecyclerView mRecyclerView;

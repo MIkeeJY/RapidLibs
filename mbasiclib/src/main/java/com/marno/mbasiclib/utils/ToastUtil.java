@@ -61,7 +61,7 @@ public class ToastUtil {
 
         int duration = content.length() > 10 ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT;
 
-        View view = LayoutInflater.from(mContext).inflate(R.layout.layout_common_toast, null);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.rapid_layout_common_toast, null);
         TextView tvToast = (TextView) view.findViewById(R.id.tv_content_toast);
         LinearLayout llayoutBg = (LinearLayout) view.findViewById(R.id.llayout_bg_toast);
         ImageView ivIcon = (ImageView) view.findViewById(R.id.iv_icon_toast);

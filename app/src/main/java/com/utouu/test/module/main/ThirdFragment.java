@@ -6,7 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 
 import com.marno.mbasiclib.adapter.RecyclerAdapter;
-import com.marno.mbasiclib.base.BaseRefreshFragment;
+import com.marno.mbasiclib.base.fragment.MBasicRefreshFragment;
 import com.marno.mbasiclib.utils.SP;
 import com.marno.mbasiclib.utils.ToastUtil;
 import com.marno.mbasiclib.widgets.MultipleStatusView;
@@ -29,7 +29,7 @@ import butterknife.BindView;
 /**
  * Created by marno on 2016/8/26/11:01.
  */
-public class ThirdFragment extends BaseRefreshFragment {
+public class ThirdFragment extends MBasicRefreshFragment {
 
     @BindView(R.id.content_view)
     MRecyclerView mRecyclerView;
@@ -108,10 +108,6 @@ public class ThirdFragment extends BaseRefreshFragment {
                             mAdapter.addAll(goodsEntityList);
                             mIsRefresh = false;
                         }
-                    }
-
-                    @Override
-                    public void onCompleted() {
                         mMsvLayout.content();
                         mRecyclerView.refreshComplete();
                         mRecyclerView.loadMoreComplete();
