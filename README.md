@@ -14,7 +14,7 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.MarnonDev:RapidLibs:v1.0.0'
+    compile 'com.github.MarnonDev:RapidLibs:v1.0.1'
 }
 ```
 
