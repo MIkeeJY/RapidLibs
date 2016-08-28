@@ -43,8 +43,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".module.SecondActivity" android:theme="@style/SwipeBackActivityTheme">
+        <activity
+            android:name=".module.second.SecondActivity"
+            android:theme="@style/SwipeBackActivityTheme">
         </activity>
+        <activity android:name=".module.third.ThirdActivity"/>
     </application>
 
 </manifest>

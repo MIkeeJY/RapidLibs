@@ -10,16 +10,16 @@ import android.widget.ImageView;
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.marno.mbasiclib.adapter.RecyclerAdapter;
 import com.marno.mbasiclib.adapter.RecyclerAdapterHelper;
-import com.marno.mbasiclib.base.fragment.MBasicRefreshFragment;
+import com.marno.mbasiclib.basic.fragment.MBasicRefreshFragment;
 import com.marno.mbasiclib.manager.BannerManager;
 import com.marno.mbasiclib.manager.GlideManager;
-import com.marno.mbasiclib.utils.ToastUtil;
 import com.marno.mbasiclib.widgets.MultipleStatusView;
 import com.marno.mbasiclib.widgets.mrecyclerview.MRecyclerView;
 import com.marno.mbasiclib.widgets.mrecyclerview.ProgressStyle;
 import com.utouu.test.R;
 import com.utouu.test.data.entity.TestEntity;
-import com.utouu.test.module.SecondActivity;
+import com.utouu.test.module.second.SecondActivity;
+import com.utouu.test.module.third.ThirdActivity;
 import com.utouu.test.utils.ActivityUtil;
 
 import java.util.ArrayList;
@@ -136,7 +136,9 @@ public class FirstFragment extends MBasicRefreshFragment {
         BannerManager.showBanner(mBanner, images);
 
         mRecyclerView.addHeaderView(bannerView);
-        mBanner.setOnItemClickListener(position -> ToastUtil.common("点击了>>>" + position));
+        mBanner.setOnItemClickListener(position -> {
+            ActivityUtil.to(mContext, ThirdActivity.class);
+        });
     }
 
     @Override

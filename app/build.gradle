@@ -69,7 +69,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile project(':mbasiclib')
+    compile project(':rapidlibs')
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
 
     compile 'com.umeng.analytics:analytics:latest.integration'

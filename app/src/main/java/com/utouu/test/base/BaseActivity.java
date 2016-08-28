@@ -2,7 +2,7 @@ package com.utouu.test.base;
 
 import android.os.Bundle;
 
-import com.marno.mbasiclib.base.activity.MBasicActivity;
+import com.marno.mbasiclib.basic.activity.MBasicActivity;
 import com.marno.mbasiclib.widgets.TintStatusBar;
 
 /**

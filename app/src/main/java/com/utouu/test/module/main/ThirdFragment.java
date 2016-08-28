@@ -6,7 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 
 import com.marno.mbasiclib.adapter.RecyclerAdapter;
-import com.marno.mbasiclib.base.fragment.MBasicRefreshFragment;
+import com.marno.mbasiclib.basic.fragment.MBasicRefreshFragment;
 import com.marno.mbasiclib.utils.SP;
 import com.marno.mbasiclib.utils.ToastUtil;
 import com.marno.mbasiclib.widgets.MultipleStatusView;

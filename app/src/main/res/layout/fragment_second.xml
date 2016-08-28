@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="@dimen/dp16"
-    tools:context="com.utouu.test.module.SecondActivity">
+    tools:context=".module.second.SecondActivity">
 
     <Button
         android:id="@+id/btn1"

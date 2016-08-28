@@ -1,1 +1,1 @@
-include ':app', ':mbasiclib'
+include ':app', ':rapidlibs'

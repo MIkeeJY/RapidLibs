@@ -1,21 +1,16 @@
-package com.utouu.test.module.main;
+package com.utouu.test.module.third;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 
-import com.marno.mbasiclib.module.main.activity.RapidPagerMainActivity;
+import com.marno.mbasiclib.module.main.activity.RapidMainActivity;
 import com.utouu.test.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by marno on 2016/8/23/15:20.
- * 主页面
- */
-public class MainActivity extends RapidPagerMainActivity {
+public class ThirdActivity extends RapidMainActivity {
 
     private ArrayList<Fragment> mFragments = new ArrayList<>();
-
 
     @Override
     protected int getStatusBarColor() {
@@ -26,6 +21,7 @@ public class MainActivity extends RapidPagerMainActivity {
     protected void initData() {
 
     }
+
 
     @Override
     public String[] getTabNameArray() {
@@ -44,22 +40,27 @@ public class MainActivity extends RapidPagerMainActivity {
     @Override
     public int[] getTabSelectedIcon() {
         return new int[]{
-            R.drawable.ic_news_selected, R.drawable.ic_video_selected,
-                    R.drawable.ic_image_selected, R.drawable.ic_me_selected};
+                R.drawable.ic_news_selected, R.drawable.ic_video_selected,
+                R.drawable.ic_image_selected, R.drawable.ic_me_selected};
     }
 
     @NonNull
     @Override
     public ArrayList<Fragment> initFragments() {
-        mFragments.add(FirstFragment.newIns());
-        mFragments.add(SecondFragment.newIns());
-        mFragments.add(ThirdFragment.newIns());
-        mFragments.add(FirstFragment.newIns());
+        mFragments.add(ContentFragment.newIns());
+        mFragments.add(ContentFragment2.newIns());
+        mFragments.add(ContentFragment3.newIns());
+        mFragments.add(ContentFragment4.newIns());
         return mFragments;
     }
 
     @Override
     public void setTab() {
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 }

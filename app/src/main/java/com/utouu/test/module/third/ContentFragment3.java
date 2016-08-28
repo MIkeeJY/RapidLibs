@@ -1,21 +1,25 @@
-package com.utouu.test.module.main;
+package com.utouu.test.module.third;
 
 
 import android.os.Bundle;
 import android.view.View;
 
 import com.marno.mbasiclib.basic.fragment.MBasicFragment;
+import com.utouu.test.R;
+
 
 /**
- * Created by marno on 2016/8/26/11:20.
- * 测试fragment
+ * Created by marno on 2016/8/23/15:20.
  */
-public class FourthFragment extends MBasicFragment {
+public class ContentFragment3 extends MBasicFragment {
 
+    public static ContentFragment3 newIns() {
+        return new ContentFragment3();
+    }
 
     @Override
     protected int getLayout() {
-        return 0;
+        return R.layout.fragment_content3;
     }
 
     @Override
@@ -27,4 +31,5 @@ public class FourthFragment extends MBasicFragment {
     protected void initData() {
 
     }
+
 }
