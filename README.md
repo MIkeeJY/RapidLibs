@@ -3,7 +3,20 @@
 ####一、简介：
 将一些自己在开发中常用的功能和第三方依赖库封装起来，处理简单的通用逻辑，让我们快速创建APP，将更多时间花在主要核心逻辑的编写；功能还在不断完善，有兴趣可以star或者fork，也可以联系我进行交流（个人邮箱：marnodev@163.com）
 
-[TOC]
+```
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+```
+dependencies {
+    compile 'com.github.MarnonDev:RapidLibs:v1.0.0'
+}
+```
 
 ####二、主要功能
 ![分包介绍](https://github.com/MarnonDev/RapidLibs/blob/master/screenshot/structure.png)
