@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.ViewGroup;
 /**
- * Created by 李刚 on 2016/5/13/15:09.
+ * Created by marno on 2016/5/13/15:09.
  */
 public abstract class FragmentStatePagerAdapter2 extends FragmentStatePagerAdapter {
     protected int currentPosition = -1;

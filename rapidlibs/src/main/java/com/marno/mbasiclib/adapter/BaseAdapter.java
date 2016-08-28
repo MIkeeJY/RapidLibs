@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Created by 李刚 on 2016/5/13/15:09.
+ * Created by marno on 2016/5/13/15:09.
  */
 abstract class BaseAdapter<T, H extends AdapterHelper> extends android.widget.BaseAdapter implements DataIO<T> {
 

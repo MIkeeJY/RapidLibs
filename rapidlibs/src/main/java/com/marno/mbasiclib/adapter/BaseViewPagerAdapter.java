@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 /**
- * Created by 李刚 on 2016/5/13/15:09.
+ * Created by marno on 2016/5/13/15:09.
  */
 abstract class BaseViewPagerAdapter<T, H extends PagerAdapterHelper> extends PagerAdapter implements DataIO<T> {
     protected final Context context;

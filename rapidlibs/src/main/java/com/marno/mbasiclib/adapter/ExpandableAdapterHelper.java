@@ -10,7 +10,7 @@ import com.marno.mbasiclib.R;
 
 
 /**
- * Created by 李刚 on 2016/5/13/15:09.
+ * Created by marno on 2016/5/13/15:09.
  */
 final public class ExpandableAdapterHelper extends BaseAdapterHelper<ExpandableAdapterHelper> {
 

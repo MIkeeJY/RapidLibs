@@ -23,8 +23,8 @@ import rx.functions.Func1;
 import rx.subjects.PublishSubject;
 
 /**
- * Created by 李刚 on 2016/7/18/10:24.
- * 所有Activity的基类
+ * Created by marno on 2016/7/18/10:24.
+ * All Activity base class
  */
 public abstract class MBasicActivity extends AppCompatActivity {
 
@@ -37,31 +37,31 @@ public abstract class MBasicActivity extends AppCompatActivity {
     protected final PublishSubject<ActivityEvent> lifecycleSubject = PublishSubject.create();
 
     /**
-     * 获取布局
+     * get activity layout
      */
     @LayoutRes
     protected abstract int getLayout();
 
     /**
-     * 获取沉浸状态栏颜色，如果是透明状态栏，返回0即可
+     * tint status bar ,if return not 0
      */
     @ColorInt
     protected abstract int getStatusBarColor();
 
     /*
-     * 在onResume()中初始化数据
+     * load data in onResume
      */
     protected abstract void initData();
 
     /**
-     * 初始化view
+     * init activity view
      *
      * @param savedInstanceState
      */
     protected abstract void initView(Bundle savedInstanceState);
 
     /**
-     * 设置布局之前
+     * before invoke setContentView will call this method
      */
     protected void beforeSetView() {
     }
@@ -90,7 +90,6 @@ public abstract class MBasicActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        //在onResume中加载数据，只有第一次可见时才加载
         if (mIsFirstShow) {
             mIsFirstShow = false;
             initData();
@@ -119,7 +118,6 @@ public abstract class MBasicActivity extends AppCompatActivity {
         mUnbinder.unbind();
     }
 
-    //监听Activity声明周期，当Activity销毁后，停止网络请求
     @NonNull
     public <T> Observable.Transformer<T, T> bindUntilEvent(@NonNull final ActivityEvent event) {
         return new Observable.Transformer<T, T>() {

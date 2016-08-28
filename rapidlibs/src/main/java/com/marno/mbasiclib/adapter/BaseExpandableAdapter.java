@@ -8,7 +8,7 @@ import android.widget.BaseExpandableListAdapter;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Created by 李刚 on 2016/5/13/15:09.
+ * Created by marno on 2016/5/13/15:09.
  */
 abstract class BaseExpandableAdapter<T, V, H extends ExpandableAdapterHelper> extends BaseExpandableListAdapter implements DataIO<T> {
 
