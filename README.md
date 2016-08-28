@@ -134,6 +134,14 @@ public class MainActivity extends RapidPagerMainActivity {
 >|StackUtil|Activity会退栈管理类|
 >|ToastUtil|ColorfulToast封装，可以看这里[ColorfulToast](https://github.com/MarnonDev/ColorfulToast)|
 
+#####3.7 widgets （自定义控件）
+>|名称|功能|
+>|:---:|:---:|
+>|avloading|非常有名的加载动画库|
+>|xrecyclerview|为RecyclerView添加刷新和加载动画，支持添加多个Header和Footer<br>更多用法可以直接去该[项目主页](https://github.com/jianghejie/XRecyclerView)|查看
+>|MultipleStatusView|支持loding，error，nonetwork，empty等多种状态视图的切换<br>继承自RelativeLayout，可以代替最外层布局，减少布局嵌套|
+>|TintStatusBar|快速沉浸状态栏，在集成MBasicActivity之后，重写getStatusBarColor()即可<br>返回0则不适配
+
 ####四、感谢
 
 >感谢为开源界做出贡献的各位大神们！啥也不说了，直接献上膝盖吧。因为有你们的无私分享才使得我们可以战在巨人的肩膀上前进！
