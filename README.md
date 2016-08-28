@@ -6,7 +6,7 @@
 [TOC]
 
 ####二、主要功能
-![分包介绍](https://github.com/MarnonDev/RapidLibs/blob/master/screenshot/package_structure.png)
+![分包介绍](https://github.com/MarnonDev/RapidLibs/blob/master/screenshot/structure.png)
 
 ####三、使用方法
 
