@@ -38,6 +38,7 @@
 >|RapidMainActivity|RapidPagerMainActivity|
 >|:---:|:---:|
 >|点击切换Fragment（类似微信）|滑动或点击切换Fragment（类似QQ）|
+>|![](https://github.com/MarnonDev/RapidLibs/blob/master/screenshot/MainPagerBasicActivity.gif)|![](https://github.com/MarnonDev/RapidLibs/blob/master/screenshot/MainBasicActivity.gif)|
 
 ```
 public class MainActivity extends RapidPagerMainActivity {
