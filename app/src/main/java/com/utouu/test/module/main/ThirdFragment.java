@@ -10,7 +10,7 @@ import com.marno.mbasiclib.basic.fragment.MBasicRefreshFragment;
 import com.marno.mbasiclib.utils.SP;
 import com.marno.mbasiclib.utils.ToastUtil;
 import com.marno.mbasiclib.widgets.MultipleStatusView;
-import com.marno.mbasiclib.widgets.mrecyclerview.MRecyclerView;
+import com.marno.mbasiclib.widgets.xrecyclerview.XRecyclerView;
 import com.utouu.test.R;
 import com.utouu.test.adapter.GoodsGridRecyclerAdapter;
 import com.utouu.test.data.entity.GoodsEntity;
@@ -32,7 +32,7 @@ import butterknife.BindView;
 public class ThirdFragment extends MBasicRefreshFragment {
 
     @BindView(R.id.content_view)
-    MRecyclerView mRecyclerView;
+    XRecyclerView mRecyclerView;
     @BindView(R.id.msvLayout)
     MultipleStatusView mMsvLayout;
 

@@ -1,4 +1,4 @@
-package com.marno.mbasiclib.widgets.mrecyclerview;
+package com.marno.mbasiclib.widgets.xrecyclerview;
 
 /**
  * Created by jianghejie on 15/11/22.

@@ -14,8 +14,8 @@ import com.marno.mbasiclib.basic.fragment.MBasicRefreshFragment;
 import com.marno.mbasiclib.manager.BannerManager;
 import com.marno.mbasiclib.manager.GlideManager;
 import com.marno.mbasiclib.widgets.MultipleStatusView;
-import com.marno.mbasiclib.widgets.mrecyclerview.MRecyclerView;
-import com.marno.mbasiclib.widgets.mrecyclerview.ProgressStyle;
+import com.marno.mbasiclib.widgets.xrecyclerview.XRecyclerView;
+import com.marno.mbasiclib.widgets.xrecyclerview.ProgressStyle;
 import com.utouu.test.R;
 import com.utouu.test.data.entity.TestEntity;
 import com.utouu.test.module.second.SecondActivity;
@@ -39,7 +39,7 @@ import rx.schedulers.Schedulers;
 public class FirstFragment extends MBasicRefreshFragment {
 
     @BindView(R.id.content_view)
-    MRecyclerView mRecyclerView;
+    XRecyclerView mRecyclerView;
     @BindView(R.id.msvLayout)
     MultipleStatusView mMsvLayout;
     private RecyclerAdapter<TestEntity> mAdapter;

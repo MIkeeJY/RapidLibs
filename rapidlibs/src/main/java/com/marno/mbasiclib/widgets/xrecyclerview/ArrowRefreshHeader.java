@@ -1,4 +1,4 @@
-package com.marno.mbasiclib.widgets.mrecyclerview;
+package com.marno.mbasiclib.widgets.xrecyclerview;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

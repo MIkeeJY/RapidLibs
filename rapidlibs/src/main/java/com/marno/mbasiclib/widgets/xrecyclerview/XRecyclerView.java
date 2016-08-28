@@ -1,4 +1,4 @@
-package com.marno.mbasiclib.widgets.mrecyclerview;
+package com.marno.mbasiclib.widgets.xrecyclerview;
 
 import android.content.Context;
 import android.support.design.widget.AppBarLayout;
@@ -15,7 +15,7 @@ import android.view.ViewParent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MRecyclerView extends RecyclerView {
+public class XRecyclerView extends RecyclerView {
     private boolean isLoadingData = false;
     private boolean isNoMore = false;
     private int mRefreshProgressStyle = ProgressStyle.SysProgress;
@@ -39,15 +39,15 @@ public class MRecyclerView extends RecyclerView {
     private View mFootView;
     private final AdapterDataObserver mDataObserver = new DataObserver();
     private AppBarStateChangeListener.State appbarState = AppBarStateChangeListener.State.EXPANDED;
-    public MRecyclerView(Context context) {
+    public XRecyclerView(Context context) {
         this(context, null);
     }
 
-    public MRecyclerView(Context context, AttributeSet attrs) {
+    public XRecyclerView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MRecyclerView(Context context, AttributeSet attrs, int defStyle) {
+    public XRecyclerView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
@@ -271,10 +271,10 @@ public class MRecyclerView extends RecyclerView {
                 }
                 if (adapter.getItemCount() == emptyCount) {
                     mEmptyView.setVisibility(View.VISIBLE);
-                    MRecyclerView.this.setVisibility(View.GONE);
+                    XRecyclerView.this.setVisibility(View.GONE);
                 } else {
                     mEmptyView.setVisibility(View.GONE);
-                    MRecyclerView.this.setVisibility(View.VISIBLE);
+                    XRecyclerView.this.setVisibility(View.VISIBLE);
                 }
             }
             if (mWrapAdapter != null) {

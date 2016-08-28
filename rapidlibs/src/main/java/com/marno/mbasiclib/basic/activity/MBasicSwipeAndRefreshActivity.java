@@ -3,13 +3,13 @@ package com.marno.mbasiclib.basic.activity;
 import android.os.Bundle;
 
 import com.jude.swipbackhelper.SwipeBackHelper;
-import com.marno.mbasiclib.widgets.mrecyclerview.MRecyclerView;
+import com.marno.mbasiclib.widgets.xrecyclerview.XRecyclerView;
 
 /**
  * Created by 李刚 on 2016/8/25/21:48.
  * 同时支持滑动返回和列表刷新
  */
-public abstract class MBasicSwipeAndRefreshActivity extends MBasicActivity implements MRecyclerView.LoadingListener {
+public abstract class MBasicSwipeAndRefreshActivity extends MBasicActivity implements XRecyclerView.LoadingListener {
     protected boolean mIsRefresh;
 
     @Override
