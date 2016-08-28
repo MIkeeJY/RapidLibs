@@ -16,21 +16,9 @@ public class MainActivity extends RapidPagerMainActivity {
 
     private ArrayList<Fragment> mFragments = new ArrayList<>();
 
-
-    @Override
-    protected int getStatusBarColor() {
-        return 0;
-    }
-
-    @Override
-    protected void initData() {
-
-    }
-
     @Override
     public String[] getTabNameArray() {
         return new String[]{"新闻", "视频", "图片", "我的"};
-//        return null;
     }
 
     @NonNull
@@ -62,4 +50,15 @@ public class MainActivity extends RapidPagerMainActivity {
     public void setTab() {
 
     }
+
+    @Override
+    protected int getStatusBarColor() {
+        return 0;
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
 }

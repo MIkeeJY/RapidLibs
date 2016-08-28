@@ -42,7 +42,8 @@ public interface IMainView {
     ArrayList<Fragment> initFragments();
 
     /**
-     * 如果需要自定义tab的属性，可以在这里设置
+     * 如果需要手动修改tab的一些属性，可以在这里设置
+     * 比如控制字体大小，显示未读消息，更改字体颜色等
      */
     void setTab();
 }

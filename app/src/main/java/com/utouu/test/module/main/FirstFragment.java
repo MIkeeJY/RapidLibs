@@ -132,7 +132,7 @@ public class FirstFragment extends MBasicRefreshFragment {
                 R.drawable.shape_indicator, R.drawable.shape_indicator_selected})
                 .setPageIndicatorAlign(
                         ConvenientBanner.PageIndicatorAlign.CENTER_HORIZONTAL);
-        List<Integer> images = Arrays.asList(R.drawable.ic_test_1, R.drawable.ic_test_2, R.drawable.ic_test_3);
+        List<Integer> images = Arrays.asList(R.drawable.banner1, R.drawable.banner2, R.drawable.banner3);
         BannerManager.showBanner(mBanner, images);
 
         mRecyclerView.addHeaderView(bannerView);
