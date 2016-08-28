@@ -103,7 +103,7 @@ public class MainActivity extends RapidPagerMainActivity {
 #####3.5 manager （三方库二次封装）
 
 >|类名|功能|主要方法|
->|:---:|:---:|
+>|:---:|:---:|:---:|
 >|GlideManager|图片加载Glide封装|— setRoundPlaceholder(int roundPlaceholder);<br>— setCommonPlaceholder(int commonPlaceholder)<br>— loadImg(Object obj, ImageView iv)<br>— loadRoundImg(Object obj, ImageView iv)|
 >|BannerManager|Banner封装|— showBanner(ConvenientBanner banner, List<？extends Object>images)|
 
@@ -111,11 +111,11 @@ public class MainActivity extends RapidPagerMainActivity {
 
 >|类名|主要方法|
 >|:---:|:---|
->|<br>DeviceUtil|getIMEI(Context context)//获取系统IMEI<br>getDeviceName()//获取设备名称<br>getVersionName(Context context)//获取应用版本名<br>getVersionCode(Context context)//获取应用版本号<br>|
->|<br>KeyBoardUtil|show()//强制显示输入法<br>hide()//强制关闭输入法<br>showOrHide()//如已打开则关闭，否则相反<br>|
+>|DeviceUtil|getIMEI(Context context)//获取系统IMEI<br>getDeviceName()//获取设备名称<br>getVersionName(Context context)//获取应用版本名<br>getVersionCode(Context context)//获取应用版本号<br>|
+>|KeyBoardUtil|show()//强制显示输入法<br>hide()//强制关闭输入法<br>showOrHide()//如已打开则关闭，否则相反<br>|
 >|MLog|[Logger](https://github.com/orhanobut/logger) 二次封装，格式化日志输出|
 >|NetUtil|isNetConnected(Context context)//判断是否连网<br>isWifi(Context context)//判断是否是wifi连接|
->|<br>ScreenUtil|getScreenWidth(Context context)//获取屏幕宽 <br>getScreenHeight(Context context)//获取屏幕高<br>dp2px(int dp, Context context)//dp转<br> px2dp(int px, Context context)//px转dp|
+>|ScreenUtil|getScreenWidth(Context context)//获取屏幕宽 <br>getScreenHeight(Context context)//获取屏幕高<br>dp2px(int dp, Context context)//dp转<br> px2dp(int px, Context context)//px转dp|
 >|SP|SharedPreferences工具类，有增删改查等功能|
 >|StackUtil|Activity会退栈管理类|
 >|ToastUtil|ColorfulToast封装，可以看这里[ColorfulToast](https://github.com/MarnonDev/ColorfulToast)|
