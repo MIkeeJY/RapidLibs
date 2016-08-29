@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by 李刚 on 2016/8/23/15:22.
  */
-public class UhooApp extends Application {
+public class MApp extends Application {
 
 
     private static Context mContext;
