@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by 李刚 on 2016/8/23/15:22.
  */
-public class UhooApp extends Application {
+public class MApp extends Application {
 
 
     private static Context mContext;
@@ -106,13 +106,13 @@ public class UhooApp extends Application {
                 BACKGROUND=400 EMPTY=500 FOREGROUND=100
                 GONE=1000 PERCEPTIBLE=130 SERVICE=300 ISIBLE=200
                  */
-                MLog.i("UhooApp   >>此appimportace =" + appProcess.importance
+                MLog.i("MApp   >>此appimportace =" + appProcess.importance
                         + ",context.getClass().getName()=" + context.getClass().getName());
                 if (appProcess.importance != ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
-                    MLog.i("UhooApp   >>处于后台" + appProcess.processName);
+                    MLog.i("MApp   >>处于后台" + appProcess.processName);
                     return true;
                 } else {
-                    MLog.i("UhooApp   >>处于前台" + appProcess.processName);
+                    MLog.i("MApp   >>处于前台" + appProcess.processName);
                     return false;
                 }
             }
